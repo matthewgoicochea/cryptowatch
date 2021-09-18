@@ -2,10 +2,10 @@ import React from "react";
 
 function CryptoInfo() {
   const info = (
-    <div class="card border-0">
-      <div class="card-header bg-transparent">Coins By Market Cap</div>
+    <div className="card border-0">
+      <div className="card-header bg-transparent">Coins By Market Cap</div>
       <div className="table-responsive">
-        <table class="table table-borderless">
+        <table className="table table-borderless">
           <thead>
             <tr>
               <th scope="col">Rank</th>

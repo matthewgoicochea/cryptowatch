@@ -37,17 +37,17 @@ function DailyCloseTimer() {
   }
 
   const timer = (
-    <div class="card">
-      <h5 class="card-header bg-grey">Crypto Market Daily Close</h5>
-      <div class="card-body">
-        <h5 class="card-title text-center">{time}</h5>
+    <div className="card">
+      <h5 className="card-header bg-grey">Crypto Market Daily Close</h5>
+      <div className="card-body">
+        <h5 className="card-title text-center">{time}</h5>
 
-        <p class="card-text"></p>
+        <p className="card-text"></p>
         <hr></hr>
         <div className="row">
           <div className="col-4"></div>
           <div className="col-4">
-            <button class="btn btn-outline-secondary">Subscribe</button>
+            <button className="btn btn-outline-secondary">Subscribe</button>
           </div>
         </div>
       </div>

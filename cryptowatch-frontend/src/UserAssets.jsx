@@ -2,8 +2,6 @@ import React from "react";
 import data from "./data/userAssets.data";
 
 function UserAssets() {
-  console.log("data:", data);
-
   const tableBody = data.map((row) => {
     return (
       <tr>
@@ -45,21 +43,3 @@ function UserAssets() {
 
 export default UserAssets;
 
-/*
-  const assetGroupOverview = (
-    <div className="container">
-      <div className="card">
-        <div className="list-group list-group-flush">
-          <a href="#" className="list-group-item list-group-item-action">
-            BTC
-          </a>
-          <a href="#" className="list-group-item list-group-item-action">
-            ETH
-          </a>
-          <a href="#" className="list-group-item list-group-item-action">
-            ALGO
-          </a>
-        </div>
-      </div>
-    </div>
-  );*/
