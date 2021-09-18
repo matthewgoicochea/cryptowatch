@@ -55,8 +55,10 @@ function DailyCloseTimer() {
   );
 
   return (
-    <div className="row">
-      <div className="col px-3 pb-3">{timer}</div>
+    <div className="container">
+      <div className="row">
+        <div className="col px-3 pb-3">{timer}</div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "./data/userAssets.data";
 
 function UserAssets() {
@@ -30,16 +31,17 @@ function UserAssets() {
   );
 
   return (
-    <>
+    <div className="container bg-grey">
       <div className="row">
         <div className="col p-0">
-          <h2 className="px-3 pt-3">Your Assets</h2>
+          <Link to="/assets">
+            <h2 className="px-3 pt-3">Your Assets</h2>
+          </Link>
           <div className="container px-3">{assetTable}</div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
 export default UserAssets;
-

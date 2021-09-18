@@ -48,8 +48,10 @@ function CryptoInfo() {
   );
 
   return (
-    <div className="row my-4">
-      <div className="col px-3">{info}</div>
+    <div className="container">
+      <div className="row my-4">
+        <div className="col px-3">{info}</div>
+      </div>
     </div>
   );
 }

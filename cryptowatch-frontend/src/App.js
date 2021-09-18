@@ -1,18 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navigation from "./Navigation";
 import Dashboard from "./Dashboard";
+import { Route, Switch } from "react-router-dom";
+import UserAssets from "./UserAssets";
 
 function App() {
-  const [info, setInfo] = useState({});
-
-  useEffect(() => {}, [info]);
-
   return (
     <div className="App">
       <Navigation />
-      <div id="dashboard">
-        <Dashboard />
-      </div>
+      <Switch>
+        <Route exact={true} path="/">
+          <Dashboard />
+        </Route>
+        <Route path="/assets">
+          <UserAssets />
+        </Route>
+      </Switch>
     </div>
   );
 }
