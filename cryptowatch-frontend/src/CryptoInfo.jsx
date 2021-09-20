@@ -5,8 +5,8 @@ function CryptoInfo() {
   const info = (
     <div className="card border-0">
       <div className="card-header bg-transparent">
-				<Link to="/ranking"> Coins By Market Cap</Link>
-				</div>
+        <Link to="/ranking">Coins By Market Cap</Link>
+      </div>
       <div className="table-responsive">
         <table className="table table-borderless">
           <thead>
