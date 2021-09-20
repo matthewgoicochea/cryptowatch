@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CryptoInfo() {
   const info = (
     <div className="card border-0">
-      <div className="card-header bg-transparent">Coins By Market Cap</div>
+      <div className="card-header bg-transparent">
+				<Link to="/ranking"> Coins By Market Cap</Link>
+				</div>
       <div className="table-responsive">
         <table className="table table-borderless">
           <thead>

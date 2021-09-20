@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 function DailyCloseTimer() {
-  const [time, setTime] = useState("000");
-  //const [seconds, setSeconds] = useState(0);
+  const [time, setTime] = useState("00:00:00");
 
   useEffect(() => {
     function startTime() {
       const today = new Date();
-      let h = today.getUTCHours();
-      let m = today.getUTCMinutes();
-      let s = today.getUTCSeconds();
-      h = checkTime(h);
-      m = checkTime(m);
-      s = checkTime(s);
+      let h = formatTime(today.getUTCHours());
+      let m = formatTime(today.getUTCMinutes());
+      let s = formatTime(today.getUTCSeconds());
 
       setTime(`${new Date((86400 - convertHMS(`${h}:${m}:${s}`)) * 1000)
         .toISOString()
@@ -23,7 +19,7 @@ function DailyCloseTimer() {
     setTimeout(startTime, 1000);
   }, [time]);
 
-  function checkTime(i) {
+  function formatTime(i) {
     if (i < 10) {
       i = "0" + i;
     } // add zero in front of numbers < 10
@@ -44,9 +40,8 @@ function DailyCloseTimer() {
 
         <p className="card-text"></p>
         <hr></hr>
-        <div className="row">
-          <div className="col-4"></div>
-          <div className="col-4">
+        <div className="row justify-content-center">
+          <div className="col-4 text-center">
             <button className="btn btn-outline-secondary">Subscribe</button>
           </div>
         </div>

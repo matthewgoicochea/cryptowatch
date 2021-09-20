@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import Dashboard from "./Dashboard";
 import { Route, Switch } from "react-router-dom";
 import UserAssets from "./UserAssets";
+import CryptoInfo from "./CryptoInfo";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Route path="/assets">
           <UserAssets />
         </Route>
+				<Route path="/ranking">
+					<CryptoInfo />
+				</Route>
       </Switch>
     </div>
   );
