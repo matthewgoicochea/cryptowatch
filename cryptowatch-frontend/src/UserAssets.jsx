@@ -5,8 +5,8 @@ import data from "./data/userAssets.data";
 function UserAssets() {
   const tableBody = data.map((row) => {
     return (
-      <tr>
-        <th scope="row" key={row.symbol}>{`${row.symbol}`}</th>
+      <tr key={row.id}>
+        <th scope="row">{`${row.symbol}`}</th>
         <td>{`$${row.price}`}</td>
         <td>{`${row.holdings} ${row.symbol}`}</td>
         <td>{`$${row.price * row.holdings}`}</td>

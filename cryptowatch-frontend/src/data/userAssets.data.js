@@ -1,5 +1,6 @@
 const data = [
   {
+    id: 1,
     name: "Bitcoin",
     symbol: "BTC",
     price: 49,
@@ -7,6 +8,7 @@ const data = [
     percentChange: 5,
   },
   {
+    id: 2,
     name: "Ethereum",
     symbol: "ETH",
     price: 3800,
